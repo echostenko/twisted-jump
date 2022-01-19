@@ -15,15 +15,21 @@ public class PlayerMove : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector2.right * horizontalInput * Time.deltaTime * speed);
 
         if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
-        {
             _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-        }
+
+        Vector2 characherScale = transform.localScale;
+
+        if (horizontalInput >= 0)
+            characherScale.x = 4;
+        else if (horizontalInput <= 0) characherScale.x = -4;
+
+        transform.localScale = characherScale;
     }
 
     
