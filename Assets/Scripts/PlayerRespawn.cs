@@ -10,7 +10,8 @@ public class PlayerRespawn : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.transform.CompareTag("Player"))
+        if (col.transform.CompareTag("Player")) 
             col.transform.position = spawnPoint.position;
+
     }
 }

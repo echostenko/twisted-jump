@@ -23,9 +23,10 @@ public class PlayerMove : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontalInput) * speed);
 
         transform.Translate(Vector2.right * horizontalInput * Time.deltaTime * speed);
-        
+
         if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
             _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+       
 
         Vector2 characterScale = transform.localScale;
 
