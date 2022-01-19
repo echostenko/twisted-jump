@@ -9,6 +9,7 @@ public class PlayerMove : MonoBehaviour
     public float jumpForce = 10f;
     public float speed = 3;
     public Rigidbody2D _rigidbody;
+    public Animator animator;
 
 
     private void Start()
@@ -19,6 +20,8 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(horizontalInput) * speed);
+
         transform.Translate(Vector2.right * horizontalInput * Time.deltaTime * speed);
         
         if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
