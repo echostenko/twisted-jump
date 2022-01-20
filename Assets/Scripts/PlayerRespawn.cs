@@ -10,11 +10,6 @@ public class PlayerRespawn : MonoBehaviour
     [SerializeField] 
     private TimerSpawnManager spawnTimer;
     
-    public void Start()
-    {
-        throw new NotImplementedException();
-    }
-
     private void OnCollisionEnter2D(Collision2D colider)
     {
         if (!colider.transform.CompareTag("Player")) return;
