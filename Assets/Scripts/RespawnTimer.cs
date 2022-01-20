@@ -22,7 +22,7 @@ public class RespawnTimer : MonoBehaviour
         respawnTimer.text = currentTime.ToString("0");
         if (currentTime <= 0)
         {
-            Destroy(GameObject.Find("RespawnTimer"));
+            DestroyImmediate(gameObject);
         }
     }
 }
