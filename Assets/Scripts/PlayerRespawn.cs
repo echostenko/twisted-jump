@@ -7,11 +7,25 @@ public class PlayerRespawn : MonoBehaviour
 {
     [SerializeField] 
     private Transform spawnPoint;
-
-    private void OnCollisionEnter2D(Collision2D col)
+    [SerializeField] 
+    private TimerSpawnManager spawnTimer;
+    
+    public void Start()
     {
-        if (col.transform.CompareTag("Player")) 
-            col.transform.position = spawnPoint.position;
+        throw new NotImplementedException();
+    }
+
+    private void OnCollisionEnter2D(Collision2D colider)
+    {
+        if (!colider.transform.CompareTag("Player")) return;
+        spawnTimer.SpawnTimer();
+        StartCoroutine(RespawnDelayCoroutine(colider.transform));
+    }
+    private IEnumerator RespawnDelayCoroutine(Transform transform)
+    {
+        yield return new WaitForSeconds(5);
+        transform.position = spawnPoint.position;
 
     }
+    
 }

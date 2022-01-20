@@ -9,7 +9,10 @@ public class RespawnTimer : MonoBehaviour
     private float currentTime = 0f;
     private float startTime = 5f;
     [SerializeField]
-    public Text respawnTimer; 
+    public Text respawnTimer;
+
+    
+    
 
     private void Start()
     {
@@ -24,5 +27,6 @@ public class RespawnTimer : MonoBehaviour
         {
             DestroyImmediate(gameObject);
         }
+        
     }
 }
