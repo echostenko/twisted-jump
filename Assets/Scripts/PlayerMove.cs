@@ -37,5 +37,12 @@ public class PlayerMove : MonoBehaviour
         transform.localScale = characterScale;
     }
 
+    void GroundCheck()
+    {
+        bool isGrounded = false;
+
+
+    }
+
     
 }
