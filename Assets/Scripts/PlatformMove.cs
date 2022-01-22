@@ -1,4 +1,3 @@
-/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,4 +11,3 @@ public class PlatformMove : MonoBehaviour
         transform.Translate(Vector3.left * Time.deltaTime * platformSpeed);
     }
 }
-*/
