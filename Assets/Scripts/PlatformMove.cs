@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class PlatformMove : MonoBehaviour
 {
     public float platformSpeed = 2f;
+
     
     void Update()
     {

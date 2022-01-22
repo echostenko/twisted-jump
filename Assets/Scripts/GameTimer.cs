@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameTimer : MonoBehaviour
@@ -14,7 +15,6 @@ public class GameTimer : MonoBehaviour
     public GameObject gameOver;
     public Transform parent;
     public GameObject player;
-
     
 
     private void Start()
@@ -28,9 +28,10 @@ public class GameTimer : MonoBehaviour
         gameTimer.text = currentTime.ToString("0");
         if (currentTime <= 0)
         {
-            DestroyImmediate(gameObject);
+            SceneManager.LoadScene(2);
+            /*DestroyImmediate(gameObject);
             Destroy(player);
-            Instantiate(gameOver, new Vector3(0, 0, 0), gameOver.transform.rotation, parent);
+            Instantiate(gameOver, new Vector3(0, 0, 0), gameOver.transform.rotation, parent);*/
         }
         
     }
