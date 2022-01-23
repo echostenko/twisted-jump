@@ -22,10 +22,10 @@ public class ItemSpawnManager : MonoBehaviour
         {
              
             var wanted = Random.Range(minTras, maxTras);
-            var position = new Vector3(wanted, transform.position.y, 94.27f);
+            var position = new Vector3(wanted, transform.position.y, 89.97f);
             cherry = Instantiate(item, position, Quaternion.identity);
             yield return new WaitForSeconds(nextSpawn);
-            Destroy(cherry, 1f);
+            Destroy(cherry, 5f);
         }
     }
 }

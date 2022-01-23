@@ -20,7 +20,7 @@ public class PlatformSpawnManager : MonoBehaviour
         while (true)
         {
             var wanted = Random.Range(minTras, maxTras);
-            var position = new Vector3(transform.position.x, wanted, 107.96f);
+            var position = new Vector3(transform.position.x, wanted, 93.79f);
             platform = Instantiate(item, position, Quaternion.identity);
             yield return new WaitForSeconds(nextSpawn);
             Destroy(platform, 30f);
