@@ -7,6 +7,7 @@ public class SceneChanger : MonoBehaviour
 {
     public Animator animanor;
     private int levelToLoad;
+    private GameObject popUp;
     
     
     public void LoadScene(int sceneNumber)
