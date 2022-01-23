@@ -19,5 +19,10 @@ public class SceneChanger : MonoBehaviour
         levelToLoad = levelIndex;
         animanor.SetTrigger("Fade_out");
     }
+
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
     

@@ -1,19 +1,21 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class ItemDestroyer : MonoBehaviour
+public class BossDestroyer : MonoBehaviour
 {
+    public GameObject nextLevelWindow;
+    public Transform parent;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.transform.CompareTag("Player"))
         {
-            ScoreManager.instance.AddPoint();
-            PlayerMove.instance.BuffJump();
             Destroy(gameObject);
+            Instantiate(nextLevelWindow, new Vector3(0, 0, 0), nextLevelWindow.transform.rotation, parent);
         }
     }
+
+    
+    
 }

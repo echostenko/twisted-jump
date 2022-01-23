@@ -9,6 +9,7 @@ public class ItemSpawnManager : MonoBehaviour
     [SerializeField] float nextSpawn = 1f;
     [SerializeField] private float minTras;
     [SerializeField] private float maxTras;
+    private GameObject cherry;
 
     private void Start()
     {
@@ -19,11 +20,12 @@ public class ItemSpawnManager : MonoBehaviour
     {
         while (true)
         {
+             
             var wanted = Random.Range(minTras, maxTras);
-            var position = new Vector3(wanted, transform.position.y);
-            Instantiate(item, position, Quaternion.identity);
+            var position = new Vector3(wanted, transform.position.y, 94.27f);
+            cherry = Instantiate(item, position, Quaternion.identity);
             yield return new WaitForSeconds(nextSpawn);
-            Destroy(item, 1f);
+            Destroy(cherry, 1f);
         }
     }
 }

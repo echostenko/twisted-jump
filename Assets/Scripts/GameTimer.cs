@@ -28,7 +28,7 @@ public class GameTimer : MonoBehaviour
         gameTimer.text = currentTime.ToString("0");
         if (currentTime <= 0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
             /*DestroyImmediate(gameObject);
             Destroy(player);
             Instantiate(gameOver, new Vector3(0, 0, 0), gameOver.transform.rotation, parent);*/

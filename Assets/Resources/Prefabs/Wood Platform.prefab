@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3855776126568652934}
   - component: {fileID: 3855776126568652935}
   - component: {fileID: 7947844786291655222}
+  - component: {fileID: -3514296946131527704}
   m_Layer: 0
   m_Name: Wood Platform
   m_TagString: Untagged
@@ -145,3 +146,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 1
+--- !u!114 &-3514296946131527704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3855776126568652929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -5,12 +5,17 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    public static PlayerMove instance;
     private float horizontalInput;
     public float jumpForce = 10f;
     public float speed = 3;
     public Rigidbody2D _rigidbody;
     public Animator animator;
 
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -37,11 +42,9 @@ public class PlayerMove : MonoBehaviour
         transform.localScale = characterScale;
     }
 
-    void GroundCheck()
+    public void BuffJump()
     {
-        bool isGrounded = false;
-
-
+        jumpForce += 0.2f;
     }
 
     

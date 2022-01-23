@@ -8,6 +8,7 @@ public class PlatformSpawnManager : MonoBehaviour
     [SerializeField] float nextSpawn = 5f;
     [SerializeField] private float minTras;
     [SerializeField] private float maxTras;
+    private GameObject platform;
 
     private void Start()
     {
@@ -19,10 +20,10 @@ public class PlatformSpawnManager : MonoBehaviour
         while (true)
         {
             var wanted = Random.Range(minTras, maxTras);
-            var position = new Vector3(transform.position.x, wanted);
-            Instantiate(item, position, Quaternion.identity);
+            var position = new Vector3(transform.position.x, wanted, 107.96f);
+            platform = Instantiate(item, position, Quaternion.identity);
             yield return new WaitForSeconds(nextSpawn);
-            Destroy(item, 1f);
+            Destroy(platform, 30f);
         }
     }
 }
