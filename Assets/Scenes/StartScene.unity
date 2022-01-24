@@ -1330,6 +1330,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4930164506309027274, guid: 2106dc1f34b09fe4da8091b4da200e79, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.827615
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930164506309027274, guid: 2106dc1f34b09fe4da8091b4da200e79, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 8.827615
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930164506309027274, guid: 2106dc1f34b09fe4da8091b4da200e79, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 8.827615
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930164506309027274, guid: 2106dc1f34b09fe4da8091b4da200e79, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930164506309027274, guid: 2106dc1f34b09fe4da8091b4da200e79, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.42
+      objectReference: {fileID: 0}
     - target: {fileID: 8966752972604204487, guid: 2106dc1f34b09fe4da8091b4da200e79, type: 3}
       propertyPath: m_Name
       value: Boss Frog

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {
     private float currentTime = 0f;
-    private float startTime = 60f;
+    private float startTime = 100f;
     [SerializeField]
     public Text gameTimer;
     [SerializeField] 
@@ -28,10 +28,9 @@ public class GameTimer : MonoBehaviour
         gameTimer.text = currentTime.ToString("0");
         if (currentTime <= 0)
         {
-            SceneManager.LoadScene(3);
-            /*DestroyImmediate(gameObject);
+            DestroyImmediate(gameObject);
             Destroy(player);
-            Instantiate(gameOver, new Vector3(0, 0, 0), gameOver.transform.rotation, parent);*/
+            Instantiate(gameOver, new Vector3(0, 0, 0), gameOver.transform.rotation, parent);
         }
         
     }
