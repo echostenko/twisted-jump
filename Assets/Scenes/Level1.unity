@@ -1233,7 +1233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa72282ecc6e814786e76c2db647904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelWindow: {fileID: 3552709806451723447, guid: 70d4362d73a8ab843898c06f3a8fbb38, type: 3}
+  nextLevelWindow: {fileID: 549685151297753830, guid: 70d4362d73a8ab843898c06f3a8fbb38, type: 3}
   parent: {fileID: 610544677}
 --- !u!1001 &1473069046074979829
 PrefabInstance:
