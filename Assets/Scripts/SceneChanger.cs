@@ -5,25 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public Animator animanor;
     private int levelToLoad;
     private GameObject popUp;
     
-    
-    public void LoadScene(int sceneNumber)
+    public void LoadStartScene()
     {
-        SceneManager.LoadScene(sceneNumber);
+        SceneManager.LoadScene(0);
     }
 
-    public void FadeToLevel(int levelIndex)
+    public void LoadFirstLevel()
     {
-        levelToLoad = levelIndex;
-        animanor.SetTrigger("Fade_out");
+        SceneManager.LoadScene(1);
     }
-
-    public void LoadNextLevel()
+    public void LoadSecondLevel()
     {
         SceneManager.LoadScene(2);
+    }
+    public void LoadThirdLevel()
+    {
+        SceneManager.LoadScene(3);
     }
 }
     

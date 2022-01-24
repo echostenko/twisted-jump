@@ -47,5 +47,10 @@ public class PlayerMove : MonoBehaviour
         jumpForce += 0.2f;
     }
 
+    public void DebuffJump()
+    {
+        jumpForce -= 0.2f;
+    }
+
     
 }

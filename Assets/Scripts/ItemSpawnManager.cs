@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ItemSpawnManager : MonoBehaviour
 {
-    [SerializeField] private GameObject item;
+    [SerializeField] private GameObject[] item;
     [SerializeField] float nextSpawn = 1f;
     [SerializeField] private float minTras;
     [SerializeField] private float maxTras;
@@ -15,15 +15,17 @@ public class ItemSpawnManager : MonoBehaviour
     {
         StartCoroutine(ItemSpawn());
     }
+    
 
     private IEnumerator ItemSpawn()
     {
+        
         while (true)
         {
-             
+            var random = Random.Range(0,item.Length);
             var wanted = Random.Range(minTras, maxTras);
-            var position = new Vector3(wanted, transform.position.y, 89.97f);
-            cherry = Instantiate(item, position, Quaternion.identity);
+            var position = new Vector3(wanted, transform.position.y, 14.1f);
+            cherry = Instantiate(item[random], position, Quaternion.identity);
             yield return new WaitForSeconds(nextSpawn);
             Destroy(cherry, 5f);
         }
