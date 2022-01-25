@@ -25,5 +25,10 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+
+    public void LoadCreditsScene()
+    {
+        SceneManager.LoadScene(5);
+    }
 }
     
