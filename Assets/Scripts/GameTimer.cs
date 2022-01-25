@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {
     private float currentTime = 0f;
-    private float startTime = 100f;
+    private float startTime = 3f;
     [SerializeField]
     public Text gameTimer;
     [SerializeField] 
