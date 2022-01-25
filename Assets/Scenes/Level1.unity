@@ -1395,9 +1395,17 @@ PrefabInstance:
       value: ExitButton
       objectReference: {fileID: 0}
     - target: {fileID: 8330787919482551387, guid: 720b4ea639561e449889dbd93f23e193, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330787919482551387, guid: 720b4ea639561e449889dbd93f23e193, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 99634532}
+    - target: {fileID: 8330787919482551387, guid: 720b4ea639561e449889dbd93f23e193, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadStartScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 720b4ea639561e449889dbd93f23e193, type: 3}
 --- !u!1001 &8756895602636457150
