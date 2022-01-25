@@ -27,4 +27,11 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = score.ToString();
     }
     
+    public void DiminishPoint()
+    {
+        if (score <= 0) return;
+        score -= 1;
+        scoreText.text = score.ToString();
+    }
+    
 }
