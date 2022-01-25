@@ -212,6 +212,10 @@ PrefabInstance:
       value: -7.58
       objectReference: {fileID: 0}
     - target: {fileID: 8058919535433627182, guid: bdf33f2d40d924847ae6648b285f44ef, type: 3}
+      propertyPath: nextSpawn
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8058919535433627182, guid: bdf33f2d40d924847ae6648b285f44ef, type: 3}
       propertyPath: spawnPositionZ
       value: 78.65
       objectReference: {fileID: 0}
