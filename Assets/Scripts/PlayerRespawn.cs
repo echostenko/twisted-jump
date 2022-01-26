@@ -5,14 +5,13 @@ using UnityEngine;
 
 public class PlayerRespawn : MonoBehaviour
 {
-    [SerializeField] 
-    private Transform spawnPoint;
-    [SerializeField] 
-    private TimerSpawnManager spawnTimer;
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private TimerSpawnManager spawnTimer;
     
     private void OnCollisionEnter2D(Collision2D colider)
     {
         if (!colider.transform.CompareTag("Player")) return;
+        LifesCounter.instance.DiminishLive();
         spawnTimer.SpawnTimer();
         StartCoroutine(RespawnDelayCoroutine(colider.transform));
     }
