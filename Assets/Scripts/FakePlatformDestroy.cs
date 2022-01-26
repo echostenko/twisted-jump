@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class FakePlatformDestroy : MonoBehaviour
 {
+    
     public float delay = 1;
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,6 +18,5 @@ public class FakePlatformDestroy : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         Destroy(gameObject);
-
     }
 }

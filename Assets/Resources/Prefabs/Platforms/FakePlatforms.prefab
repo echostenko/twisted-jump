@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5470648255368484652}
   - component: {fileID: 5470648255368484655}
   - component: {fileID: 5470648255368484654}
+  - component: {fileID: 7524068798589651012}
   m_Layer: 0
   m_Name: Fake Platform (11)
   m_TagString: Untagged
@@ -186,6 +187,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &7524068798589651012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648255368484648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648255386518061
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +214,7 @@ GameObject:
   - component: {fileID: 5470648255386518065}
   - component: {fileID: 5470648255386518064}
   - component: {fileID: 5470648255386518067}
+  - component: {fileID: 5308024632578041597}
   m_Layer: 0
   m_Name: Fake Platform (16)
   m_TagString: Untagged
@@ -372,6 +386,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &5308024632578041597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648255386518061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648255517568020
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,6 +413,7 @@ GameObject:
   - component: {fileID: 5470648255517568024}
   - component: {fileID: 5470648255517568027}
   - component: {fileID: 5470648255517568026}
+  - component: {fileID: 4019783506839226951}
   m_Layer: 0
   m_Name: Fake Platform (18)
   m_TagString: Untagged
@@ -558,6 +585,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &4019783506839226951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648255517568020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648255557619425
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +612,7 @@ GameObject:
   - component: {fileID: 5470648255557619429}
   - component: {fileID: 5470648255557619428}
   - component: {fileID: 5470648255557619431}
+  - component: {fileID: 7184928321534365611}
   m_Layer: 0
   m_Name: Fake Platform (9)
   m_TagString: Untagged
@@ -744,6 +784,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &7184928321534365611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648255557619425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648256056421486
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +811,7 @@ GameObject:
   - component: {fileID: 5470648256056421490}
   - component: {fileID: 5470648256056421485}
   - component: {fileID: 5470648256056421484}
+  - component: {fileID: 4564674779891367960}
   m_Layer: 0
   m_Name: Fake Platform (15)
   m_TagString: Untagged
@@ -930,6 +983,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &4564674779891367960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648256056421486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648256178541842
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,6 +1143,7 @@ GameObject:
   - component: {fileID: 5470648256335387544}
   - component: {fileID: 5470648256335387547}
   - component: {fileID: 5470648256335387546}
+  - component: {fileID: 185142233927686370}
   m_Layer: 0
   m_Name: Fake Platform (6)
   m_TagString: Untagged
@@ -1249,6 +1315,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &185142233927686370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648256335387540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648256403757048
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,6 +1342,7 @@ GameObject:
   - component: {fileID: 5470648256403757052}
   - component: {fileID: 5470648256403757055}
   - component: {fileID: 5470648256403757054}
+  - component: {fileID: 4839740961536111230}
   m_Layer: 0
   m_Name: Fake Platform (17)
   m_TagString: Untagged
@@ -1435,6 +1514,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &4839740961536111230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648256403757048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3255820294327877399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7977353892013077397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648256474363817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,6 +1553,7 @@ GameObject:
   - component: {fileID: 5470648256474363821}
   - component: {fileID: 5470648256474363820}
   - component: {fileID: 5470648256474363823}
+  - component: {fileID: 1351850120215662065}
   m_Layer: 0
   m_Name: Fake Platform (13)
   m_TagString: Untagged
@@ -1621,6 +1725,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &1351850120215662065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648256474363817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648256503150025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,6 +1916,7 @@ GameObject:
   - component: {fileID: 5470648256623676215}
   - component: {fileID: 5470648256623676214}
   - component: {fileID: 5470648256623676209}
+  - component: {fileID: 1020813551397850761}
   m_Layer: 0
   m_Name: Fake Platform (14)
   m_TagString: Untagged
@@ -1971,6 +2088,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &1020813551397850761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648256623676211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648256688905392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,6 +2115,7 @@ GameObject:
   - component: {fileID: 5470648256688905396}
   - component: {fileID: 5470648256688905399}
   - component: {fileID: 5470648256688905398}
+  - component: {fileID: 2085705236444566218}
   m_Layer: 0
   m_Name: Fake Platform (12)
   m_TagString: Untagged
@@ -2157,6 +2287,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &2085705236444566218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648256688905392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648256875192144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,6 +2314,7 @@ GameObject:
   - component: {fileID: 5470648256875192148}
   - component: {fileID: 5470648256875192151}
   - component: {fileID: 5470648256875192150}
+  - component: {fileID: 9108498919486014925}
   m_Layer: 0
   m_Name: Fake Platform (7)
   m_TagString: Untagged
@@ -2343,6 +2486,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &9108498919486014925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648256875192144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648257167214894
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,6 +2513,7 @@ GameObject:
   - component: {fileID: 5470648257167214898}
   - component: {fileID: 5470648257167214893}
   - component: {fileID: 5470648257167214892}
+  - component: {fileID: 2948756571981570573}
   m_Layer: 0
   m_Name: Fake Platform (8)
   m_TagString: Untagged
@@ -2529,6 +2685,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &2948756571981570573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648257167214894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648257256064353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,6 +2712,7 @@ GameObject:
   - component: {fileID: 5470648257256064357}
   - component: {fileID: 5470648257256064356}
   - component: {fileID: 5470648257256064359}
+  - component: {fileID: 9017473785646979586}
   m_Layer: 0
   m_Name: Fake Platform (10)
   m_TagString: Untagged
@@ -2715,6 +2884,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 3
+--- !u!114 &9017473785646979586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470648257256064353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5470648257449744625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,6 +3018,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88ea897b296a26d46a63683aaa473148, type: 3}
+--- !u!1 &7977353892013077397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2692840882441989901, guid: 88ea897b296a26d46a63683aaa473148, type: 3}
+  m_PrefabInstance: {fileID: 5470648256429972632}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7977353892013077396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2692840882441989900, guid: 88ea897b296a26d46a63683aaa473148, type: 3}
