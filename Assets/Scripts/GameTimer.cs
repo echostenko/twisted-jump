@@ -1,18 +1,12 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameTimer : MonoBehaviour
 {
     private float currentTime = 0f;
     private float startTime = 100f;
-    [SerializeField]
-    public Text gameTimer;
-    [SerializeField] 
-    public GameObject gameOver;
+    [SerializeField] public Text gameTimer;
+    [SerializeField] public GameObject gameOver;
     public Transform parent;
     public GameObject player;
     

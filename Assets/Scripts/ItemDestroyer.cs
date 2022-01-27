@@ -6,7 +6,7 @@ public class ItemDestroyer : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
-            ScoreManager.instance.AddPoint();
+            ScoreManager.instance.PlusPoint();
             PlayerMove.instance.BuffJump();
             Destroy(gameObject);
         }

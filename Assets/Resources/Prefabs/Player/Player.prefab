@@ -145,9 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a96f648f61cf4d81dd5a3d89036a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 7
+  jumpForce: 3
   speed: 5
-  _rigidbody: {fileID: 0}
   animator: {fileID: 7487397027158535264}
 --- !u!95 &7487397027158535264
 Animator:

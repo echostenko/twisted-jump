@@ -6,8 +6,8 @@ public class PoisonItemDestroyer : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
-            ScoreManager.instance.DiminishPoint();
-            PlayerMove.instance.BuffJump();
+            ScoreManager.instance.MinusPoint();
+            PlayerMove.instance.DebuffJump();
             Destroy(gameObject);
         }
         else if (other.transform.CompareTag("BottomCollider"))

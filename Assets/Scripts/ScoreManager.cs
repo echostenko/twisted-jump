@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
@@ -21,13 +17,13 @@ public class ScoreManager : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
-    public void AddPoint()
+    public void PlusPoint()
     {
         score += 1;
         scoreText.text = score.ToString();
     }
     
-    public void DiminishPoint()
+    public void MinusPoint()
     {
         if (score <= 0) return;
         score -= 1;
