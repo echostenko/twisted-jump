@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerRespawn : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class PlayerRespawn : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D colider)
     {
         if (!colider.transform.CompareTag("Player")) return;
-        LifesCounter.instance.DiminishLive();
+        //LifesCounter.instance.DiminishLive();
         spawnTimer.SpawnTimer();
         StartCoroutine(RespawnDelayCoroutine(colider.transform));
     }

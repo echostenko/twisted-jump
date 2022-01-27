@@ -1,18 +1,17 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class ItemDestroyer : MonoBehaviour
 {
-    public void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.transform.CompareTag("Player"))
         {
             ScoreManager.instance.AddPoint();
             PlayerMove.instance.BuffJump();
+            Destroy(gameObject);
+        }
+        else if (other.transform.CompareTag("BottomCollider"))
+        {
             Destroy(gameObject);
         }
     }

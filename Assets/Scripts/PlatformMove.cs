@@ -6,9 +6,8 @@ using UnityEngine;
 public class PlatformMove : MonoBehaviour
 {
     public float platformSpeed = 2f;
-
     
-    void Update()
+    private void Update()
     {
         transform.Translate(Vector3.left * Time.deltaTime * platformSpeed);
     }

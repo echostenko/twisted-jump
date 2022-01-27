@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2692840882441989898}
   - component: {fileID: 4291989702400732195}
   - component: {fileID: 1188386125224847209}
-  - component: {fileID: -1776076326606685963}
+  - component: {fileID: -4820093095368815883}
   m_Layer: 0
   m_Name: Fake Platform
   m_TagString: Untagged
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2692840882441989901}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -147,7 +147,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 5
+  m_Constraints: 7
 --- !u!61 &4291989702400732195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformSpeed: 1
---- !u!114 &-1776076326606685963
+--- !u!114 &-4820093095368815883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,6 +196,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2692840882441989901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44ba3bb5e1761ad4e80a8fe3aab50659, type: 3}
+  m_Script: {fileID: 11500000, guid: 07e99cea1651efe4a940af76bbcaf440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

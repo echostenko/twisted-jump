@@ -28,7 +28,7 @@ public class ItemSpawnManager : MonoBehaviour
             var position = new Vector3(wanted, transform.position.y, spawnPositionZ);
             cherry = Instantiate(item[random], position, Quaternion.identity);
             yield return new WaitForSeconds(nextSpawn);
-            Destroy(cherry, 5f);
+            //Destroy(cherry, 5f);
         }
     }
 }

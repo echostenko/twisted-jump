@@ -1,15 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PoisonItemDestroyer : MonoBehaviour
 {
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.transform.CompareTag("Player"))
         {
             ScoreManager.instance.DiminishPoint();
-            PlayerMove.instance.DebuffJump();
+            PlayerMove.instance.BuffJump();
+            Destroy(gameObject);
+        }
+        else if (other.transform.CompareTag("BottomCollider"))
+        {
             Destroy(gameObject);
         }
     }
