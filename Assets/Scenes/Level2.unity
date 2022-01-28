@@ -1089,6 +1089,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46cf187e1dfd0f84cb30a3faf5f6894c, type: 3}
+--- !u!1001 &1518844490
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8048271910474612627, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_Name
+      value: NextWindowSpawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048271910474612628, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 1399158746}
+    - target: {fileID: 8048271910474612628, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: BossDestroyer
+      value: 
+      objectReference: {fileID: 1593488630}
+    - target: {fileID: 8048271910474612628, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: nextLevelWindow
+      value: 
+      objectReference: {fileID: 8890253043782952737, guid: 16e8c930f55987e448aeabead2cf02e5, type: 3}
+    - target: {fileID: 8048271910474612629, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048271910474612629, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.66892266
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048271910474612629, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.44100526
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048271910474612629, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 39.972466
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048271910474612629, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048271910474612629, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048271910474612629, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048271910474612629, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048271910474612629, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048271910474612629, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048271910474612629, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cab06915f6a00a24fb011d51cc7b5810, type: 3}
 --- !u!1 &1593488627 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7691389720530010909, guid: 1ed6752ed34bc6d4b8698c86d63a795a, type: 3}
@@ -1141,6 +1210,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.39434552}
   m_EdgeRadius: 0
+--- !u!114 &1593488630 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -5324213363651761533, guid: 1ed6752ed34bc6d4b8698c86d63a795a, type: 3}
+  m_PrefabInstance: {fileID: 622810176}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593488627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa72282ecc6e814786e76c2db647904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1916953464
 PrefabInstance:
   m_ObjectHideFlags: 0
