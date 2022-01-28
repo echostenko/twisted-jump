@@ -1,18 +1,21 @@
+using System;
 using UnityEngine;
 
 public class BossDestroyer : MonoBehaviour
 {
-    public GameObject nextLevelWindow;
-    public Transform parent;
+    public event Action bossDestroyedEvent;
+
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.transform.CompareTag("Player"))
         {
-            Destroy(gameObject);
-            Instantiate(nextLevelWindow, new Vector3(0, 0, 0), nextLevelWindow.transform.rotation, parent);
+            DestroyBoss();
         }
     }
 
-    
-    
+    private void DestroyBoss()
+    {
+        Destroy(gameObject);
+        bossDestroyedEvent?.Invoke();
+    }
 }
