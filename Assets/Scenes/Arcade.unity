@@ -372,6 +372,10 @@ PrefabInstance:
       propertyPath: respawnTimer
       value: 
       objectReference: {fileID: 5700497774356545648, guid: 7e8b0017a03fb824e9f061cdbc9fc070, type: 3}
+    - target: {fileID: 6465892114049402637, guid: 170a3500ca305624b85e47327cc95c9d, type: 3}
+      propertyPath: PlayerRespawn
+      value: 
+      objectReference: {fileID: 1687070050}
     - target: {fileID: 6465892114049402638, guid: 170a3500ca305624b85e47327cc95c9d, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -828,6 +832,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f00b7b44795b31e41a13e48ae2798284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1687070050 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -451173381762796270, guid: 61cca5fd61caf2a41ac5229350925891, type: 3}
+  m_PrefabInstance: {fileID: 727287419}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96babb1bbc28bde458cd383aa16ee0b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &1802367358 stripped

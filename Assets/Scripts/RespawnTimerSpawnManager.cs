@@ -16,10 +16,5 @@ public class RespawnTimerSpawnManager : MonoBehaviour
     {
         Instantiate(respawnTimer, new Vector3(0, 0, 0), respawnTimer.transform.rotation, parent);    
     }
-
-    private void OnDestroy()
-    {
-        PlayerRespawn.playerRespawnedEvent -= PlayerRespawnOnplayerRespawnedEvent;
-    }
 }
     

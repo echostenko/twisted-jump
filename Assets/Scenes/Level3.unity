@@ -142,6 +142,10 @@ PrefabInstance:
       propertyPath: respawnTimer
       value: 
       objectReference: {fileID: 5700497774356545648, guid: 7e8b0017a03fb824e9f061cdbc9fc070, type: 3}
+    - target: {fileID: 6465892114049402637, guid: 170a3500ca305624b85e47327cc95c9d, type: 3}
+      propertyPath: PlayerRespawn
+      value: 
+      objectReference: {fileID: 804046221}
     - target: {fileID: 6465892114049402638, guid: 170a3500ca305624b85e47327cc95c9d, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -733,6 +737,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7487397027158535274, guid: 61cca5fd61caf2a41ac5229350925891, type: 3}
   m_PrefabInstance: {fileID: 1977080803}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &804046221 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -451173381762796270, guid: 61cca5fd61caf2a41ac5229350925891, type: 3}
+  m_PrefabInstance: {fileID: 1977080803}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804046220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96babb1bbc28bde458cd383aa16ee0b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &808154371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -997,8 +1012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa72282ecc6e814786e76c2db647904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelWindow: {fileID: 2667303423320609671, guid: a90dfb9932bf71c46a8597dbbf5cdb23, type: 3}
-  parent: {fileID: 81589631}
 --- !u!61 &1336563890
 BoxCollider2D:
   m_ObjectHideFlags: 0
