@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,8 +6,12 @@ public class RespawnTimer : MonoBehaviour
 {
     private float currentTime = 0f;
     private float startTime = 5f;
-    [SerializeField] public Text respawnTimer;
+    public GameObject Timer;
+    public Transform parent;
+    [SerializeField] private Text respawnTimer;
     
+    
+
     private void Start()
     {
         currentTime = startTime;

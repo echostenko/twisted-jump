@@ -1,22 +1,24 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class PlayerRespawn : MonoBehaviour
 {
     [SerializeField] private Transform spawnPoint;
-    [SerializeField] private TimerSpawnManager spawnTimer;
+    //[SerializeField] private TimerSpawnManager spawnTimer;
+
+    public event Action playerRespawnedEvent;
     
     private void OnCollisionEnter2D(Collision2D colider)
     {
-        if (!colider.transform.CompareTag("Player")) return;
-        //LifesCounter.instance.DiminishLive();
-        spawnTimer.SpawnTimer();
-        StartCoroutine(RespawnDelayCoroutine(colider.transform));
+        if (!colider.transform.CompareTag("BottomCollider")) return;
+        playerRespawnedEvent?.Invoke();
+        StartCoroutine(RespawnDelayCoroutine());
     }
-    private IEnumerator RespawnDelayCoroutine(Transform transform)
+    private IEnumerator RespawnDelayCoroutine()
     {
         yield return new WaitForSeconds(5);
-        transform.position = spawnPoint.position;
+        gameObject.transform.position = spawnPoint.position;
 
     }
     
