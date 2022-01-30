@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerRespawn : MonoBehaviour
 {
     [SerializeField] private Transform spawnPoint;
-    //[SerializeField] private TimerSpawnManager spawnTimer;
 
     public event Action playerRespawnedEvent;
     

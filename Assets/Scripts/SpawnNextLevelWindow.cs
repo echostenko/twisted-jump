@@ -8,16 +8,16 @@ public class SpawnNextLevelWindow : MonoBehaviour
 
     private void Awake()
     {
-        BossDestroyer.bossDestroyedEvent += BossDestroyerOnbossDestroyedEvent; 
+        BossDestroyer.bossDestroyedEvent += SpawnWindow; 
     }
 
-    private void BossDestroyerOnbossDestroyedEvent()
+    private void SpawnWindow()
     {
         Instantiate(nextLevelWindow, new Vector3(0, 0, 0), nextLevelWindow.transform.rotation, parent);
     }
 
     private void OnDestroy()
     {
-        BossDestroyer.bossDestroyedEvent -= BossDestroyerOnbossDestroyedEvent;     
+        BossDestroyer.bossDestroyedEvent -= SpawnWindow;     
     }
 }

@@ -514,7 +514,7 @@ PrefabInstance:
     - target: {fileID: 6465892114049402637, guid: 170a3500ca305624b85e47327cc95c9d, type: 3}
       propertyPath: PlayerRespawn
       value: 
-      objectReference: {fileID: 1264384340}
+      objectReference: {fileID: 1264384341}
     - target: {fileID: 6465892114049402638, guid: 170a3500ca305624b85e47327cc95c9d, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -719,11 +719,10 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7487397027158535274, guid: 61cca5fd61caf2a41ac5229350925891, type: 3}
   m_PrefabInstance: {fileID: 15529770}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1264384340
+--- !u!114 &1264384341 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: -451173381762796270, guid: 61cca5fd61caf2a41ac5229350925891, type: 3}
+  m_PrefabInstance: {fileID: 15529770}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264384339}
   m_Enabled: 1
@@ -731,7 +730,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96babb1bbc28bde458cd383aa16ee0b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 108256399}
 --- !u!1001 &1276414338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -755,6 +753,10 @@ PrefabInstance:
       propertyPath: sceneNumber
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 969427953191218974, guid: eff68adae4612664ab8a5df0c8e53f93, type: 3}
+      propertyPath: BossDestroyer
+      value: 
+      objectReference: {fileID: 1593488630}
     - target: {fileID: 1473069045736335644, guid: eff68adae4612664ab8a5df0c8e53f93, type: 3}
       propertyPath: m_Pivot.x
       value: 0

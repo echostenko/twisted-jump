@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,22 @@ public class GameTimer : MonoBehaviour
     [SerializeField] public GameObject gameOver;
     public Transform parent;
     public GameObject player;
-    
+    public BossDestroyer BossDestroyer;
+
+    public void Awake()
+    {
+        BossDestroyer.bossDestroyedEvent += StopGameTimer;
+    }
+
+    private void StopGameTimer()
+    {
+        Destroy(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        BossDestroyer.bossDestroyedEvent -= StopGameTimer;
+    }
 
     private void Start()
     {

@@ -172,11 +172,10 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7487397027158535274, guid: 61cca5fd61caf2a41ac5229350925891, type: 3}
   m_PrefabInstance: {fileID: 7487397027087291320}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &19037155
+--- !u!114 &19037155 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: -451173381762796270, guid: 61cca5fd61caf2a41ac5229350925891, type: 3}
+  m_PrefabInstance: {fileID: 7487397027087291320}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19037154}
   m_Enabled: 1
@@ -184,7 +183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96babb1bbc28bde458cd383aa16ee0b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 1467779321}
 --- !u!114 &99634532 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7532534616809121858, guid: 0a69687a0d97d474092d128f54476de4, type: 3}
@@ -563,6 +561,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 610544677}
     m_Modifications:
+    - target: {fileID: 2737493480165891027, guid: aeb42a1f9a97f0a40bc23d9654d333b5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.58
+      objectReference: {fileID: 0}
     - target: {fileID: 3644794300401635097, guid: aeb42a1f9a97f0a40bc23d9654d333b5, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -875,6 +877,10 @@ PrefabInstance:
       value: 107.96
       objectReference: {fileID: 0}
     - target: {fileID: 8846791698692738858, guid: 8055aafd1c3f79f45b7804b9b7e652b0, type: 3}
+      propertyPath: spawnPosition
+      value: -4.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846791698692738858, guid: 8055aafd1c3f79f45b7804b9b7e652b0, type: 3}
       propertyPath: spawnPositionZ
       value: 107.96
       objectReference: {fileID: 0}
@@ -919,6 +925,10 @@ PrefabInstance:
       propertyPath: sceneNumber
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 969427953191218974, guid: eff68adae4612664ab8a5df0c8e53f93, type: 3}
+      propertyPath: BossDestroyer
+      value: 
+      objectReference: {fileID: 642540817}
     - target: {fileID: 1473069045736335644, guid: eff68adae4612664ab8a5df0c8e53f93, type: 3}
       propertyPath: m_Pivot.x
       value: 0
