@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4015873998365930265}
   - component: {fileID: 4015873998365930266}
-  - component: {fileID: 5924024302450705892}
   m_Layer: 0
-  m_Name: BackgroundMusic
+  m_Name: MusicLevel1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4015873998365930267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5562852, y: 0.278353, z: 1582.4524}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -128,15 +127,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5924024302450705892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4015873998365930267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aeb6d55ba28188498b49efd6d3e15fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
