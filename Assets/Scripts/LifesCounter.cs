@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,22 +8,31 @@ public class LifesCounter : MonoBehaviour
     public GameObject gameOverScreen;
     public Transform parent;
     public Text lifeText;
-    private int score = 5;
+    private int continues = 5;
+    public PlayerRespawn PlayerRespawn;
 
-    private void Awake()
+
+    public void Awake()
     {
-        instance = this;
+        PlayerRespawn.playerRespawnedEvent += MinusContinue;
     }
 
-    void Start()
+    private void MinusContinue()
     {
-        lifeText.text = score.ToString();
+        if (continues == 1)
+        {
+            Instantiate(gameOverScreen, new Vector3(0, 0, 0), gameOverScreen.transform.rotation, parent);
+        }
+        continues -= 1;
+        lifeText.text = continues.ToString();    }
+
+    private void Start()
+    {
+        lifeText.text = continues.ToString();
     }
 
-    public void DiminishLive()
+    private void OnDestroy()
     {
-        if (score == 1) Instantiate(gameOverScreen, new Vector3(0, 0, 0), gameOverScreen.transform.rotation, parent);
-        score -= 1;
-        lifeText.text = score.ToString();
+        PlayerRespawn.playerRespawnedEvent -= MinusContinue;
     }
 }
