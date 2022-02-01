@@ -6,14 +6,10 @@ public class RespawnTimerSpawnManager : MonoBehaviour
     public Transform parent;
     public PlayerRespawn PlayerRespawn;
     
-    public void Awake()
-    {
+    public void Awake() => 
         PlayerRespawn.playerRespawnedEvent += PlayerRespawnOnplayerRespawnedEvent;
-    }
-    
-    private void PlayerRespawnOnplayerRespawnedEvent()
-    {
-        Instantiate(respawnTimer, new Vector3(0, 0, 0), respawnTimer.transform.rotation, parent);    
-    }
+
+    private void PlayerRespawnOnplayerRespawnedEvent() => 
+        Instantiate(respawnTimer, new Vector3(0, 0, 0), respawnTimer.transform.rotation, parent);
 }
     

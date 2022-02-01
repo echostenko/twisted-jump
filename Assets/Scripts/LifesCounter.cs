@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,27 +11,21 @@ public class LifesCounter : MonoBehaviour
     public PlayerRespawn PlayerRespawn;
 
 
-    public void Awake()
-    {
+    public void Awake() => 
         PlayerRespawn.playerRespawnedEvent += MinusContinue;
-    }
+
+    private void Start() => 
+        lifeText.text = continues.ToString();
+
+    private void OnDestroy() => 
+        PlayerRespawn.playerRespawnedEvent -= MinusContinue;
 
     private void MinusContinue()
     {
         if (continues == 1)
-        {
             Instantiate(gameOverScreen, new Vector3(0, 0, 0), gameOverScreen.transform.rotation, parent);
-        }
+        
         continues -= 1;
-        lifeText.text = continues.ToString();    }
-
-    private void Start()
-    {
-        lifeText.text = continues.ToString();
-    }
-
-    private void OnDestroy()
-    {
-        PlayerRespawn.playerRespawnedEvent -= MinusContinue;
+        lifeText.text = continues.ToString();    
     }
 }

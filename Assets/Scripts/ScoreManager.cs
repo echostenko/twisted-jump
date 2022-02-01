@@ -7,15 +7,11 @@ public class ScoreManager : MonoBehaviour
     public Text scoreText;
     private int score = 0;
 
-    private void Awake()
-    {
+    private void Awake() => 
         instance = this;
-    }
 
-    void Start()
-    {
+    void Start() => 
         scoreText.text = score.ToString();
-    }
 
     public void PlusPoint()
     {

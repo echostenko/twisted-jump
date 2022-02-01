@@ -10,9 +10,7 @@ public class ItemDestroyer : MonoBehaviour
             PlayerMove.instance.BuffJump();
             Destroy(gameObject);
         }
-        else if (other.transform.CompareTag("BottomCollider"))
-        {
+        else if (other.transform.CompareTag("BottomCollider")) 
             Destroy(gameObject);
-        }
     }
 }

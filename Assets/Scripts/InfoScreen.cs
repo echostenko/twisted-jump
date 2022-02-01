@@ -5,8 +5,6 @@ public class InfoScreen : MonoBehaviour
     public GameObject infoScreen;
     public Transform parent;
 
-    public void LoadInfoScreen()
-    {
+    public void LoadInfoScreen() => 
         Instantiate(infoScreen, new Vector3(0, 0, 100), infoScreen.transform.rotation, parent);
-    }
 }

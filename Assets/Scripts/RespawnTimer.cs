@@ -9,20 +9,14 @@ public class RespawnTimer : MonoBehaviour
     public Transform parent;
     [SerializeField] private Text respawnTimer;
     
-    
-
-    private void Start()
-    {
+    private void Start() => 
         currentTime = startTime;
-    }
 
     private void Update()
     {
         currentTime -= 1 * Time.deltaTime;
         respawnTimer.text = currentTime.ToString("0");
-        if (currentTime <= 0)
-        {
+        if (currentTime <= 0) 
             DestroyImmediate(gameObject);
-        }
     }
 }

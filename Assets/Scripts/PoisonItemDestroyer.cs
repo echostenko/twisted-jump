@@ -10,9 +10,7 @@ public class PoisonItemDestroyer : MonoBehaviour
             PlayerMove.instance.DebuffJump();
             Destroy(gameObject);
         }
-        else if (other.transform.CompareTag("BottomCollider"))
-        {
+        else if (other.transform.CompareTag("BottomCollider")) 
             Destroy(gameObject);
-        }
     }
 }

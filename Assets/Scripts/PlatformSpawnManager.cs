@@ -9,10 +9,8 @@ public class PlatformSpawnManager : MonoBehaviour
     [SerializeField] public float spawnPositionZ;
     private GameObject platform;
 
-    private void Start()
-    {
+    private void Start() => 
         StartCoroutine(ItemSpawn());
-    }
 
     private IEnumerator ItemSpawn()
     {

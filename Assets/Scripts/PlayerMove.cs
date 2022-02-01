@@ -7,18 +7,13 @@ public class PlayerMove : MonoBehaviour
     public static PlayerMove instance;
     public float jumpForce = 10f;
     public float speed = 3;
-    
     public Animator animator;
 
-    private void Awake()
-    {
+    private void Awake() => 
         instance = this;
-    }
 
-    private void Start()
-    {
+    private void Start() => 
         _rigidbody = GetComponent<Rigidbody2D>();
-    }
 
     private void Update()
     {
@@ -38,15 +33,9 @@ public class PlayerMove : MonoBehaviour
         transform.localScale = characterScale;
     }
 
-    public void BuffJump()
-    {
+    public void BuffJump() => 
         jumpForce += 0.2f;
-    }
 
-    public void DebuffJump()
-    {
+    public void DebuffJump() => 
         jumpForce -= 0.2f;
-    }
-
-    
 }

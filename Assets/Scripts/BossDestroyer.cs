@@ -7,10 +7,8 @@ public class BossDestroyer : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.transform.CompareTag("Player"))
-        {
+        if (other.transform.CompareTag("Player")) 
             DestroyBoss();
-        }
     }
 
     private void DestroyBoss()

@@ -9,11 +9,9 @@ public class ItemSpawnManager : MonoBehaviour
     [SerializeField] private float maxTras;
     [SerializeField] private float spawnPositionZ;
 
-    private void Start()
-    {
+    private void Start() => 
         StartCoroutine(ItemSpawn());
-    }
-    
+
 
     private IEnumerator ItemSpawn()
     {

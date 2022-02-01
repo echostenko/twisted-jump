@@ -11,6 +11,6 @@ public class DestroyPopUp : MonoBehaviour
     private void OnDestroy() => 
         button.onClick.RemoveListener(DestroyInfo);
 
-    public void DestroyInfo() => 
+    private void DestroyInfo() => 
         Destroy(gameObject);
 }

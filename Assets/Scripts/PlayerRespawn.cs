@@ -18,7 +18,5 @@ public class PlayerRespawn : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         gameObject.transform.position = spawnPoint.position;
-
     }
-    
 }
