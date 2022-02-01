@@ -27,10 +27,8 @@ public class GameTimer : MonoBehaviour
         BossDestroyer.bossDestroyedEvent -= StopGameTimer;
     }
 
-    private void Start()
-    {
+    private void Start() => 
         currentTime = startTime;
-    }
 
     private void Update()
     {
