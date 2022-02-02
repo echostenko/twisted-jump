@@ -17,13 +17,13 @@ namespace Player
         private void DestroyPlayer() => 
             Destroy(gameObject);
 
-        private void OnCollisionEnter2D(Collision2D colider)
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!colider.transform.CompareTag("BottomCollider")) return;
+            if (!other.transform.CompareTag("BottomCollider")) return;
             PlayerRespawnedEvent?.Invoke();
             StartCoroutine(RespawnDelayCoroutine());
         }
-    
+
         private IEnumerator RespawnDelayCoroutine()
         {
             yield return new WaitForSeconds(5);

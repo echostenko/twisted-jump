@@ -655,6 +655,10 @@ PrefabInstance:
       propertyPath: spawnTimer
       value: 
       objectReference: {fileID: 1493112459}
+    - target: {fileID: 5885416614112467453, guid: b006ddf3bd88a94488b905fe1b74b27c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5885416614112467454, guid: b006ddf3bd88a94488b905fe1b74b27c, type: 3}
       propertyPath: m_TagString
       value: BottomCollider
