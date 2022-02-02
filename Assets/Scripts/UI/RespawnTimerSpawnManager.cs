@@ -1,15 +1,35 @@
+using Player;
 using UnityEngine;
 
-public class RespawnTimerSpawnManager : MonoBehaviour
+namespace UI
 {
-    public GameObject respawnTimer;
-    public Transform parent;
-    public PlayerRespawn PlayerRespawn;
-    
-    public void Awake() => 
-        PlayerRespawn.playerRespawnedEvent += PlayerRespawnOnplayerRespawnedEvent;
+    public class RespawnTimerSpawnManager : MonoBehaviour
+    {
+        public GameObject respawnTimer;
+        public Transform parent;
+        private bool isOver;
 
-    private void PlayerRespawnOnplayerRespawnedEvent() => 
-        Instantiate(respawnTimer, new Vector3(0, 0, 0), respawnTimer.transform.rotation, parent);
+    
+        private void Awake()
+        {
+            LifesCounter.GameOverEvent += IsGameOver;
+            PlayerRespawn.PlayerRespawnedEvent += PlayerRespawnOnplayerRespawnedEvent;
+        }
+
+        private void OnDestroy()
+        {
+            LifesCounter.GameOverEvent -= IsGameOver;
+            PlayerRespawn.PlayerRespawnedEvent -= PlayerRespawnOnplayerRespawnedEvent;
+        }
+
+        private void IsGameOver() => 
+            isOver = true;
+
+        private void PlayerRespawnOnplayerRespawnedEvent()
+        {
+            if (!isOver) 
+                Instantiate(respawnTimer, new Vector3(0, 0, 0), respawnTimer.transform.rotation, parent);
+        }
+    }
 }
     

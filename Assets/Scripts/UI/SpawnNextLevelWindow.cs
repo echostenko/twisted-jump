@@ -1,17 +1,19 @@
 using UnityEngine;
 
-public class SpawnNextLevelWindow : MonoBehaviour
+namespace UI
 {
-    public GameObject nextLevelWindow;
-    public Transform parent;
-    public BossDestroyer BossDestroyer;
+    public class SpawnNextLevelWindow : MonoBehaviour
+    {
+        public GameObject nextLevelWindow;
+        public Transform parent;
 
-    private void Awake() => 
-        BossDestroyer.bossDestroyedEvent += SpawnWindow;
+        private void Awake() => 
+            BossDestroyer.bossDestroyedEvent += SpawnWindow;
     
-    private void OnDestroy() => 
-        BossDestroyer.bossDestroyedEvent -= SpawnWindow;
+        private void OnDestroy() => 
+            BossDestroyer.bossDestroyedEvent -= SpawnWindow;
 
-    private void SpawnWindow() => 
-        Instantiate(nextLevelWindow, new Vector3(0, 0, 0), nextLevelWindow.transform.rotation, parent);
+        private void SpawnWindow() => 
+            Instantiate(nextLevelWindow, new Vector3(0, 0, 0), nextLevelWindow.transform.rotation, parent);
+    }
 }

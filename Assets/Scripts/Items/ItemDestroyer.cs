@@ -1,16 +1,20 @@
+using Player;
 using UnityEngine;
 
-public class ItemDestroyer : MonoBehaviour
+namespace Items
 {
-    private void OnCollisionEnter2D(Collision2D other)
+    public class ItemDestroyer : MonoBehaviour
     {
-        if (other.transform.CompareTag("Player"))
+        private void OnCollisionEnter2D(Collision2D other)
         {
-            ScoreManager.instance.PlusPoint();
-            PlayerMove.instance.BuffJump();
-            Destroy(gameObject);
+            if (other.transform.CompareTag("Player"))
+            {
+                ScoreManager.Instance.PlusPoint();
+                PlayerMove.instance.BuffJump();
+                Destroy(gameObject);
+            }
+            else if (other.transform.CompareTag("BottomCollider")) 
+                Destroy(gameObject);
         }
-        else if (other.transform.CompareTag("BottomCollider")) 
-            Destroy(gameObject);
     }
 }

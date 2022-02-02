@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BossDestroyer : MonoBehaviour
 {
-    public event Action bossDestroyedEvent;
+    public static event Action bossDestroyedEvent;
 
     public void OnTriggerEnter2D(Collider2D other)
     {

@@ -1,27 +1,30 @@
 using System.Collections;
 using UnityEngine;
 
-public class ItemSpawnManager : MonoBehaviour
+namespace Items
 {
-    [SerializeField] private GameObject[] item;
-    [SerializeField] float nextSpawn = 1f;
-    [SerializeField] private float minTras;
-    [SerializeField] private float maxTras;
-    [SerializeField] private float spawnPositionZ;
-
-    private void Start() => 
-        StartCoroutine(ItemSpawn());
-
-
-    private IEnumerator ItemSpawn()
+    public class ItemSpawnManager : MonoBehaviour
     {
-        while (true)
+        [SerializeField] private GameObject[] item;
+        [SerializeField] float nextSpawn = 1f;
+        [SerializeField] private float minTras;
+        [SerializeField] private float maxTras;
+        [SerializeField] private float spawnPositionZ;
+
+        private void Start() => 
+            StartCoroutine(ItemSpawn());
+
+
+        private IEnumerator ItemSpawn()
         {
-            var random = Random.Range(0,item.Length);
-            var wanted = Random.Range(minTras, maxTras);
-            var position = new Vector3(wanted, transform.position.y, spawnPositionZ);
-            Instantiate(item[random], position, Quaternion.identity);
-            yield return new WaitForSeconds(nextSpawn);
+            while (true)
+            {
+                var random = Random.Range(0,item.Length);
+                var wanted = Random.Range(minTras, maxTras);
+                var position = new Vector3(wanted, transform.position.y, spawnPositionZ);
+                Instantiate(item[random], position, Quaternion.identity);
+                yield return new WaitForSeconds(nextSpawn);
+            }
         }
     }
 }

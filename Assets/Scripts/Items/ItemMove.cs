@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class ItemMove : MonoBehaviour
+namespace Items
 {
-    public float itemSpeed = 3f;
+    public class ItemMove : MonoBehaviour
+    {
+        public float itemSpeed = 3f;
 
-    void Update() => 
-        transform.Translate(Vector3.down * Time.deltaTime * itemSpeed);
+        void Update() => 
+            transform.Translate(Vector3.down * Time.deltaTime * itemSpeed);
+    }
 }

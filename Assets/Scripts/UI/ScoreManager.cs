@@ -1,16 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ScoreManager : MonoBehaviour
 {
-    public static ScoreManager instance;  
+    public static ScoreManager Instance;  
     public Text scoreText;
     private int score = 0;
 
     private void Awake() => 
-        instance = this;
+        Instance = this;
 
-    void Start() => 
+    private void Start() => 
         scoreText.text = score.ToString();
 
     public void PlusPoint()

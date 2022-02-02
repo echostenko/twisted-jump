@@ -1,16 +1,20 @@
+using Player;
 using UnityEngine;
 
-public class PoisonItemDestroyer : MonoBehaviour
+namespace Items
 {
-    public void OnCollisionEnter2D(Collision2D other)
+    public class PoisonItemDestroyer : MonoBehaviour
     {
-        if (other.transform.CompareTag("Player"))
+        public void OnCollisionEnter2D(Collision2D other)
         {
-            ScoreManager.instance.MinusPoint();
-            PlayerMove.instance.DebuffJump();
-            Destroy(gameObject);
+            if (other.transform.CompareTag("Player"))
+            {
+                ScoreManager.Instance.MinusPoint();
+                PlayerMove.instance.DebuffJump();
+                Destroy(gameObject);
+            }
+            else if (other.transform.CompareTag("BottomCollider")) 
+                Destroy(gameObject);
         }
-        else if (other.transform.CompareTag("BottomCollider")) 
-            Destroy(gameObject);
     }
 }
