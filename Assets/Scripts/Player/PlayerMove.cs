@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Player
@@ -34,6 +35,22 @@ namespace Player
 
             transform.localScale = characterScale;
         }
+
+        /*private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.gameObject.CompareTag("Platform"))
+            {
+                gameObject.transform.parent = other.gameObject.transform;
+            }
+        }
+
+        private void OnCollisionExit2D(Collision2D other)
+        {
+            if (other.gameObject.CompareTag("Platform"))
+            {
+                gameObject.transform.parent = other.gameObject.transform;
+            }
+        }*/
 
         public void BuffJump() => 
             jumpForce += 0.2f;

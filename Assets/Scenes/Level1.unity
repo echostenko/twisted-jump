@@ -1211,9 +1211,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2404051680275835395, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051680533041121, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051680720024204, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051680797828476, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051680969756137, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051681027038756, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051681058275167, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     - target: {fileID: 2404051681084432595, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051681084432597, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051681093187793, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051681407735060, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051681468310625, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051681495525666, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
       objectReference: {fileID: 0}
     - target: {fileID: 2404051681495525668, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
       propertyPath: m_IsTrigger
@@ -1226,6 +1274,14 @@ PrefabInstance:
     - target: {fileID: 2404051681495525669, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051681760125436, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404051681852356423, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
+      propertyPath: m_TagString
+      value: Platform
       objectReference: {fileID: 0}
     - target: {fileID: 6621463794665250379, guid: efb1addaa67650a4780e1dcc00658b74, type: 3}
       propertyPath: m_Enabled
