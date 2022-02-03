@@ -13,8 +13,9 @@ namespace Items
                 PlayerMove.instance.BuffJump();
                 Destroy(gameObject);
             }
-            else if (other.transform.CompareTag("BottomCollider")) 
-                Destroy(gameObject);
         }
+
+        private void OnTriggerEnter2D(Collider2D other) => 
+            Destroy(gameObject);
     }
 }
