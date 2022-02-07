@@ -36,9 +36,9 @@ namespace Player
             transform.localScale = characterScale;
         }
 
-        /*private void OnCollisionEnter2D(Collision2D other)
+        private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.gameObject.CompareTag("Platform"))
+            if (other.gameObject.CompareTag("Crate"))
             {
                 gameObject.transform.parent = other.gameObject.transform;
             }
@@ -46,11 +46,11 @@ namespace Player
 
         private void OnCollisionExit2D(Collision2D other)
         {
-            if (other.gameObject.CompareTag("Platform"))
+            if (other.gameObject.CompareTag("Crate"))
             {
                 gameObject.transform.parent = other.gameObject.transform;
             }
-        }*/
+        }
 
         public void BuffJump() => 
             jumpForce += 0.2f;
