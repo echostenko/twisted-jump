@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648255368484649}
   - component: {fileID: 5470648255368484659}
-  - component: {fileID: 5470648255368484658}
   - component: {fileID: 5470648255368484653}
   - component: {fileID: 5470648255368484652}
   - component: {fileID: 5470648255368484655}
@@ -88,19 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648255368484658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648255368484648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648255368484653
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,7 +121,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648255368484648}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -209,7 +195,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648255386518066}
   - component: {fileID: 5470648255386518068}
-  - component: {fileID: 5470648255386518071}
   - component: {fileID: 5470648255386518070}
   - component: {fileID: 5470648255386518065}
   - component: {fileID: 5470648255386518064}
@@ -287,19 +272,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648255386518071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648255386518061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648255386518070
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -334,7 +306,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648255386518061}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -408,7 +380,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648255517568021}
   - component: {fileID: 5470648255517568031}
-  - component: {fileID: 5470648255517568030}
   - component: {fileID: 5470648255517568025}
   - component: {fileID: 5470648255517568024}
   - component: {fileID: 5470648255517568027}
@@ -486,19 +457,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648255517568030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648255517568020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648255517568025
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -533,7 +491,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648255517568020}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -607,7 +565,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648255557619430}
   - component: {fileID: 5470648255557619432}
-  - component: {fileID: 5470648255557619435}
   - component: {fileID: 5470648255557619434}
   - component: {fileID: 5470648255557619429}
   - component: {fileID: 5470648255557619428}
@@ -685,19 +642,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648255557619435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648255557619425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648255557619434
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -732,7 +676,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648255557619425}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -806,7 +750,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648256056421487}
   - component: {fileID: 5470648256056421489}
-  - component: {fileID: 5470648256056421488}
   - component: {fileID: 5470648256056421491}
   - component: {fileID: 5470648256056421490}
   - component: {fileID: 5470648256056421485}
@@ -884,19 +827,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648256056421488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648256056421486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648256056421491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -931,7 +861,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648256056421486}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1138,7 +1068,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648256335387541}
   - component: {fileID: 5470648256335387551}
-  - component: {fileID: 5470648256335387550}
   - component: {fileID: 5470648256335387545}
   - component: {fileID: 5470648256335387544}
   - component: {fileID: 5470648256335387547}
@@ -1216,19 +1145,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648256335387550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648256335387540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648256335387545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1263,7 +1179,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648256335387540}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1337,7 +1253,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648256403757049}
   - component: {fileID: 5470648256403756995}
-  - component: {fileID: 5470648256403756994}
   - component: {fileID: 5470648256403757053}
   - component: {fileID: 5470648256403757052}
   - component: {fileID: 5470648256403757055}
@@ -1415,19 +1330,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648256403756994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648256403757048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648256403757053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1462,7 +1364,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648256403757048}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1536,7 +1438,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648256474363822}
   - component: {fileID: 5470648256474363824}
-  - component: {fileID: 5470648256474363827}
   - component: {fileID: 5470648256474363826}
   - component: {fileID: 5470648256474363821}
   - component: {fileID: 5470648256474363820}
@@ -1614,19 +1515,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648256474363827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648256474363817}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648256474363826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1661,7 +1549,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648256474363817}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1899,7 +1787,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648256623676208}
   - component: {fileID: 5470648256623676218}
-  - component: {fileID: 5470648256623676213}
   - component: {fileID: 5470648256623676212}
   - component: {fileID: 5470648256623676215}
   - component: {fileID: 5470648256623676214}
@@ -1977,19 +1864,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648256623676213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648256623676211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648256623676212
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2024,7 +1898,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648256623676211}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2098,7 +1972,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648256688905393}
   - component: {fileID: 5470648256688905403}
-  - component: {fileID: 5470648256688905402}
   - component: {fileID: 5470648256688905397}
   - component: {fileID: 5470648256688905396}
   - component: {fileID: 5470648256688905399}
@@ -2176,19 +2049,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648256688905402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648256688905392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648256688905397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2223,7 +2083,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648256688905392}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2297,7 +2157,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648256875192145}
   - component: {fileID: 5470648256875192155}
-  - component: {fileID: 5470648256875192154}
   - component: {fileID: 5470648256875192149}
   - component: {fileID: 5470648256875192148}
   - component: {fileID: 5470648256875192151}
@@ -2375,19 +2234,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648256875192154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648256875192144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648256875192149
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2422,7 +2268,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648256875192144}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2496,7 +2342,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648257167214895}
   - component: {fileID: 5470648257167214897}
-  - component: {fileID: 5470648257167214896}
   - component: {fileID: 5470648257167214899}
   - component: {fileID: 5470648257167214898}
   - component: {fileID: 5470648257167214893}
@@ -2574,19 +2419,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648257167214896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648257167214894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648257167214899
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2621,7 +2453,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648257167214894}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2695,7 +2527,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5470648257256064358}
   - component: {fileID: 5470648257256064360}
-  - component: {fileID: 5470648257256064363}
   - component: {fileID: 5470648257256064362}
   - component: {fileID: 5470648257256064357}
   - component: {fileID: 5470648257256064356}
@@ -2773,19 +2604,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5470648257256064363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5470648257256064353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ec6176d91063ec49b4c88acd30a3546, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 2
 --- !u!61 &5470648257256064362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2820,7 +2638,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5470648257256064353}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2943,6 +2761,10 @@ PrefabInstance:
     - target: {fileID: 2692840882441989896, guid: 88ea897b296a26d46a63683aaa473148, type: 3}
       propertyPath: delay
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2692840882441989898, guid: 88ea897b296a26d46a63683aaa473148, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2692840882441989900, guid: 88ea897b296a26d46a63683aaa473148, type: 3}
       propertyPath: m_RootOrder
