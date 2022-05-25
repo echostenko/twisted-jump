@@ -1,22 +1,28 @@
-using System;
+using Data;
 using UnityEngine;
 
 namespace Player
 {
     public class PlayerMove : MonoBehaviour
     {
+        public static PlayerMove Instance;
+        public Animator animator;
+        public PlayerData playerData;
+
         private float horizontalInput;
         private Rigidbody2D _rigidbody;
-        public static PlayerMove instance;
-        public float jumpForce = 10f;
-        public float speed = 3;
-        public Animator animator;
+        private float jumpForce;
+        private float speed;
 
         private void Awake() => 
-            instance = this;
+            Instance = this;
 
-        private void Start() => 
+        private void Start()
+        {
+            jumpForce = playerData.jumpForce;
+            speed = playerData.speed;
             _rigidbody = GetComponent<Rigidbody2D>();
+        }
 
         private void Update()
         {
@@ -38,18 +44,14 @@ namespace Player
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.gameObject.CompareTag("Crate"))
-            {
+            if (other.gameObject.CompareTag("Crate")) 
                 gameObject.transform.parent = other.gameObject.transform;
-            }
         }
 
         private void OnCollisionExit2D(Collision2D other)
         {
-            if (other.gameObject.CompareTag("Crate"))
-            {
+            if (other.gameObject.CompareTag("Crate")) 
                 gameObject.transform.parent = other.gameObject.transform;
-            }
         }
 
         public void BuffJump() => 

@@ -10,7 +10,7 @@ namespace Items
             if (other.transform.CompareTag("Player"))
             {
                 ScoreManager.Instance.PlusPoint();
-                PlayerMove.instance.BuffJump();
+                PlayerMove.Instance.BuffJump();
                 Destroy(gameObject);
             }
         }
