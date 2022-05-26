@@ -1,3 +1,4 @@
+/*
 using System.Collections;
 using UnityEngine;
 
@@ -13,8 +14,7 @@ namespace Items
 
         private void Start() => 
             StartCoroutine(ItemSpawn());
-
-
+        
         private IEnumerator ItemSpawn()
         {
             while (true)
@@ -29,3 +29,4 @@ namespace Items
         }
     }
 }
+*/

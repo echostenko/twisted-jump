@@ -7,23 +7,32 @@ namespace Services
 {
     public class ServiceLocator: MonoBehaviour
     {
+        public static ServiceLocator instance;
+        public IItemPool ItemPool;
+
         [SerializeField]
         private GameSettings GameSettings;
-        
         private IAssetProvider assetProvider;
         private IItemFactory itemFactory;
-        private IItemPool itemPool;
         private ItemSpawner itemSpawner;
         private ICoroutineRunner coroutineRunner;
         private IItemPositionService itemPositionService;
 
 
-        private void Awake() => 
-            SetDependencies();
-
-        private void Start()
+        private void Awake()
         {
-            itemPool.Initialize();
+            if (instance == null)
+                instance = this;
+            else if (instance != null) 
+                Destroy(gameObject);
+
+            SetDependencies();
+            Initialize();
+        }
+
+        private void Initialize()
+        {
+            ItemPool.Initialize();
             itemSpawner.Initialize();
         }
 
@@ -33,8 +42,8 @@ namespace Services
             itemFactory = new ItemFactory(assetProvider);
             itemPositionService = new ItemPositionService();
             coroutineRunner = new GameObject("CoroutineRunner").AddComponent<CoroutineRunner>();
-            itemPool = new ItemPool(itemFactory, GameSettings);
-            itemSpawner = new ItemSpawner(itemPool, coroutineRunner, itemPositionService, GameSettings);
+            ItemPool = new ItemPool(itemFactory, GameSettings);
+            itemSpawner = new ItemSpawner(ItemPool, coroutineRunner, itemPositionService, GameSettings);
         }
     }
 }

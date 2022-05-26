@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: GameSettings
   m_EditorClassIdentifier: 
   ItemSpawnDelay: 3
-  ItemsCount: 1
+  ItemsCount: 10

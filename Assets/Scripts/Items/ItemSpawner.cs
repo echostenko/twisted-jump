@@ -32,7 +32,7 @@ namespace Items
                 CreateCherry();
                 cherryCount++;
                 yield return new WaitForSeconds(gameSettings.ItemSpawnDelay);
-            } while (cherryCount < gameSettings.ItemsCount);
+            } while (cherryCount < 100);
         }
 
         private void CreateCherry()
