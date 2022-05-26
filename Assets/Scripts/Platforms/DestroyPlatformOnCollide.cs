@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public class DestroyPlatformOnCollide : MonoBehaviour
+namespace Platforms
 {
-    private void OnCollisionEnter2D(Collision2D other)
+    public class DestroyPlatformOnCollide : MonoBehaviour
     {
-        if (other.gameObject.CompareTag("LeftCollider")) 
-            Destroy(gameObject);
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.gameObject.CompareTag("LeftCollider")) 
+                Destroy(gameObject);
+        }
     }
 }

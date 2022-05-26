@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class DestroyPlatformUnderPlayer : MonoBehaviour
+namespace Platforms
 {
-    private void OnCollisionEnter2D(Collision2D other)
+    public class DestroyPlatformUnderPlayer : MonoBehaviour
     {
-        if (other.gameObject.CompareTag("Player")) 
-            Destroy(gameObject, 1f);
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.gameObject.CompareTag("Player")) 
+                Destroy(gameObject, 1f);
+        }
     }
 }
 

@@ -1,3 +1,4 @@
+using Boss;
 using UnityEngine;
 
 namespace UI

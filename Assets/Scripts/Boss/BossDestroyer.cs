@@ -1,19 +1,22 @@
 using System;
 using UnityEngine;
 
-public class BossDestroyer : MonoBehaviour
+namespace Boss
 {
-    public static event Action bossDestroyedEvent;
-
-    public void OnTriggerEnter2D(Collider2D other)
+    public class BossDestroyer : MonoBehaviour
     {
-        if (other.transform.CompareTag("Player")) 
-            DestroyBoss();
-    }
+        public static event Action bossDestroyedEvent;
 
-    private void DestroyBoss()
-    {
-        Destroy(gameObject);
-        bossDestroyedEvent?.Invoke();
+        public void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.transform.CompareTag("Player")) 
+                DestroyBoss();
+        }
+
+        private void DestroyBoss()
+        {
+            Destroy(gameObject);
+            bossDestroyedEvent?.Invoke();
+        }
     }
 }

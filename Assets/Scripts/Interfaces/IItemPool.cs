@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Services
+namespace Interfaces
 {
     public interface IItemPool
     {
