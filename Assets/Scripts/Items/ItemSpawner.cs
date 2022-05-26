@@ -1,6 +1,6 @@
 ﻿using System.Collections;
+using Data;
 using Interfaces;
-using Services;
 using UnityEngine;
 
 namespace Items
@@ -9,19 +9,20 @@ namespace Items
     {
         private IItemPool itemPool;
         private ICoroutineRunner coroutineRunner;
-        private float spawnDelay = 2f;
-        private int cherryCountLimit = 10;
+        private IItemPositionService itemPositionService;
+        private readonly GameSettings gameSettings;
 
-        public ItemSpawner(IItemPool itemPool, ICoroutineRunner coroutineRunner)
+        public ItemSpawner(IItemPool itemPool, ICoroutineRunner coroutineRunner, 
+            IItemPositionService itemPositionService, GameSettings gameSettings)
         {
             this.itemPool = itemPool;
             this.coroutineRunner = coroutineRunner;
+            this.itemPositionService = itemPositionService;
+            this.gameSettings = gameSettings;
         }
 
-        public void Initialize()
-        {
+        public void Initialize() => 
             coroutineRunner.StartCoroutine(SpawnWithDelay());
-        }
 
         private IEnumerator SpawnWithDelay()
         {
@@ -30,14 +31,14 @@ namespace Items
             {
                 CreateCherry();
                 cherryCount++;
-                yield return new WaitForSeconds(spawnDelay);
-            } while (cherryCount < cherryCountLimit);
+                yield return new WaitForSeconds(gameSettings.ItemSpawnDelay);
+            } while (cherryCount < gameSettings.ItemsCount);
         }
 
         private void CreateCherry()
         {
             var cherry = itemPool.GetItemFromPool();
-            cherry.GetComponent<Rigidbody2D>().mass.Equals(1f);
+            cherry.transform.SetPositionAndRotation(itemPositionService.GetSpawnPosition(), Quaternion.identity);
         }
     }
 }

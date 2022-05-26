@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using Data;
 using Interfaces;
-using Items;
 using UnityEngine;
 
 namespace Services
@@ -9,23 +9,19 @@ namespace Services
     {
         private readonly List<GameObject> availableItems = new List<GameObject>();
         private readonly List<GameObject> takenItems = new List<GameObject>();
-        private readonly int itemsCount = 10;
         private readonly IItemFactory itemFactory;
-        private ItemPositionService itemPositionService;
+        private readonly GameSettings gameSettings;
 
-        public ItemPool(IItemFactory itemFactory, ItemPositionService itemPositionService)
+        public ItemPool(IItemFactory itemFactory, GameSettings gameSettings)
         {
             this.itemFactory = itemFactory;
-            this.itemPositionService = itemPositionService;
+            this.gameSettings = gameSettings;
         }
 
         public void Initialize()
         {
-            for (var i = 0; i < itemsCount; i++)
-            {
-                var spawnPosition = itemPositionService.GetSpawnPosition();
-                availableItems.Add(itemFactory.CreateCherry(spawnPosition));
-            } 
+            for (var i = 0; i < gameSettings.ItemsCount; i++)
+                availableItems.Add(itemFactory.CreateCherry(new Vector3(-5000, 5000, 0)));
         }
 
         public GameObject GetItemFromPool()

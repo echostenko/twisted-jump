@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿using Interfaces;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Services
 {
-    public class ItemPositionService
+    public class ItemPositionService : IItemPositionService
     {
         private const float minPositionX = -8.21f;
         private const float maxPositionX = 6.19f;
