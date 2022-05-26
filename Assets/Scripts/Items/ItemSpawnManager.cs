@@ -22,6 +22,7 @@ namespace Items
                 var random = Random.Range(0,item.Length);
                 var wanted = Random.Range(minTras, maxTras);
                 var position = new Vector3(wanted, transform.position.y, spawnPositionZ);
+                
                 Instantiate(item[random], position, Quaternion.identity);
                 yield return new WaitForSeconds(nextSpawn);
             }

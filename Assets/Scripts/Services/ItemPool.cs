@@ -10,14 +10,21 @@ namespace Services
         private readonly List<GameObject> takenItems = new List<GameObject>();
         private readonly int itemsCount = 10;
         private readonly IItemFactory itemFactory;
+        private ItemPositionService itemPositionService;
 
-        public ItemPool(IItemFactory itemFactory) => 
+        public ItemPool(IItemFactory itemFactory, ItemPositionService itemPositionService)
+        {
             this.itemFactory = itemFactory;
+            this.itemPositionService = itemPositionService;
+        }
 
         public void Initialize()
         {
-            for (int i = 0; i < itemsCount; i++) 
-                availableItems.Add(itemFactory.CreateCherry(new Vector3(0, 0, 0)));
+            for (var i = 0; i < itemsCount; i++)
+            {
+                var spawnPosition = itemPositionService.GetSpawnPosition();
+                availableItems.Add(itemFactory.CreateCherry(spawnPosition));
+            } 
         }
 
         public GameObject GetItemFromPool()
