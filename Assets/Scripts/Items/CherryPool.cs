@@ -5,23 +5,23 @@ using UnityEngine;
 
 namespace Services
 {
-    public class ItemPool : IItemPool
+    public class ObjectPool : IObjectPool
     {
         private readonly List<GameObject> availableItems = new List<GameObject>();
         private readonly List<GameObject> takenItems = new List<GameObject>();
-        private readonly IItemFactory itemFactory;
+        private readonly IObjectFactory objectFactory;
         private readonly GameSettings gameSettings;
 
-        public ItemPool(IItemFactory itemFactory, GameSettings gameSettings)
+        public ObjectPool(IObjectFactory objectFactory, GameSettings gameSettings)
         {
-            this.itemFactory = itemFactory;
+            this.objectFactory = objectFactory;
             this.gameSettings = gameSettings;
         }
 
         public void Initialize()
         {
             for (var i = 0; i < gameSettings.ItemsCount; i++)
-                availableItems.Add(itemFactory.CreateCherry(new Vector3(-5000, 5000, 0)));
+                availableItems.Add(objectFactory.CreateObject(new Vector3(-5000, 5000, 0)));
         }
 
         public GameObject GetItemFromPool()
