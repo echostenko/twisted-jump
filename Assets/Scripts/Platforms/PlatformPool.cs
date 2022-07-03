@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Data;
 using Interfaces;
 using UnityEngine;
 
@@ -10,18 +9,18 @@ namespace Platforms
         private readonly List<GameObject> availableItems = new List<GameObject>();
         private readonly List<GameObject> takenItems = new List<GameObject>();
         private readonly IObjectFactory platformFactory;
-        private readonly GameSettings gameSettings;
+        private Transform platformsParent;
 
-        public PlatformPool(IObjectFactory platformFactory, GameSettings gameSettings)
+        public PlatformPool(IObjectFactory platformFactory, Transform platformsParent)
         {
             this.platformFactory = platformFactory;
-            this.gameSettings = gameSettings;
+            this.platformsParent = platformsParent;
         }
 
         public void Initialize()
         {
-            for (var i = 0; i < gameSettings.ItemsCount; i++)
-                availableItems.Add(platformFactory.CreateObject(new Vector3(-5000, 5000, 0)));
+            for (var i = 0; i < 30; i++)
+                availableItems.Add(platformFactory.CreateObject(new Vector3(-5000, 5000, 0), platformsParent));
         }
 
         public GameObject GetItemFromPool()
