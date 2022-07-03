@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Items
 {
-    public class ItemDestroyer : MonoBehaviour
+    public class SetCherryToPool : MonoBehaviour
     {
         private ServiceLocator serviceLocator;
 

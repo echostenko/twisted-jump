@@ -10,14 +10,14 @@ namespace Services
     {
         public static ServiceLocator instance;
         public IObjectPool cherryPool;
+        public IObjectPool platformPool;
 
         [SerializeField] private GameSettings GameSettings;
         [SerializeField] private Transform firstSpawner;
         [SerializeField] private Transform secondSpawner;
         [SerializeField] private Transform thirdSpawner;
         [SerializeField] private Transform platforms;
-        
-        private IObjectPool platformPool;
+
         private IAssetProvider assetProvider;
         private IObjectFactory cherryFactory;
         private IObjectFactory platformFactory;
