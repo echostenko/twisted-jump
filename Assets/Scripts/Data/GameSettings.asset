@@ -14,3 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemSpawnDelay: 3
   ItemsCount: 10
+  firstPlatformSpawnPosX: -0.05
+  firstPlatformSpawnPosY: -1.42
+  firstPlatformSpawnPosZ: 107.96
+  secondPlatformSpawnX: 7.440001
+  secondPlatformSpawnY: -2.81
+  secondPlatformSpawnerZ: 107.96
+  thirdPlatformSpawnX: 0
+  thirdPlatformSpawnY: -4.53
+  thirdPlatformSpawnZ: 107.96
