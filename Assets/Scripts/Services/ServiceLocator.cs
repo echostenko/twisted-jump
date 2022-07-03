@@ -11,13 +11,18 @@ namespace Services
         public static ServiceLocator instance;
         public IObjectPool cherryPool;
 
-        [SerializeField]
-        private GameSettings GameSettings;
+        [SerializeField] private GameSettings GameSettings;
+        [SerializeField] private Transform firstSpawner;
+        [SerializeField] private Transform secondSpawner;
+        [SerializeField] private Transform thirdSpawner;
+        [SerializeField] private Transform platforms;
+        
         private IObjectPool platformPool;
         private IAssetProvider assetProvider;
         private IObjectFactory cherryFactory;
         private IObjectFactory platformFactory;
         private ItemSpawner itemSpawner;
+        private PlatformSpawner platformSpawner;
         private ICoroutineRunner coroutineRunner;
         private IItemPositionService itemPositionService;
 
@@ -38,6 +43,7 @@ namespace Services
             cherryPool.Initialize();
             platformPool.Initialize();
             itemSpawner.Initialize();
+            platformSpawner.Initialize();
         }
 
         private void SetDependencies()
@@ -48,8 +54,9 @@ namespace Services
             itemPositionService = new ItemPositionService();
             coroutineRunner = new GameObject("CoroutineRunner").AddComponent<CoroutineRunner>();
             cherryPool = new CherryPool(cherryFactory, GameSettings);
-            platformPool = new PlatformPool(platformFactory, GameSettings);
+            platformPool = new PlatformPool(platformFactory, platforms);
             itemSpawner = new ItemSpawner(cherryPool, coroutineRunner, itemPositionService, GameSettings);
+            platformSpawner = new PlatformSpawner(platformPool, coroutineRunner, firstSpawner, secondSpawner, thirdSpawner);
         }
     }
 }
