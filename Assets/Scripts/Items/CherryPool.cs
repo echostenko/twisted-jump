@@ -3,7 +3,7 @@ using Data;
 using Interfaces;
 using UnityEngine;
 
-namespace Services
+namespace Items
 {
     public class CherryPool : IObjectPool
     {
