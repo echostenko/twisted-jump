@@ -7,15 +7,15 @@ namespace Items
 {
     public class ItemSpawner
     {
-        private IItemPool itemPool;
+        private IObjectPool objectPool;
         private ICoroutineRunner coroutineRunner;
         private IItemPositionService itemPositionService;
         private readonly GameSettings gameSettings;
 
-        public ItemSpawner(IItemPool itemPool, ICoroutineRunner coroutineRunner, 
+        public ItemSpawner(IObjectPool objectPool, ICoroutineRunner coroutineRunner, 
             IItemPositionService itemPositionService, GameSettings gameSettings)
         {
-            this.itemPool = itemPool;
+            this.objectPool = objectPool;
             this.coroutineRunner = coroutineRunner;
             this.itemPositionService = itemPositionService;
             this.gameSettings = gameSettings;
@@ -37,7 +37,7 @@ namespace Items
 
         private void CreateCherry()
         {
-            var cherry = itemPool.GetItemFromPool();
+            var cherry = objectPool.GetItemFromPool();
             cherry.transform.SetPositionAndRotation(itemPositionService.GetSpawnPosition(), Quaternion.identity);
         }
     }

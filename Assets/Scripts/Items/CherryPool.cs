@@ -5,14 +5,14 @@ using UnityEngine;
 
 namespace Services
 {
-    public class ObjectPool : IObjectPool
+    public class CherryPool : IObjectPool
     {
         private readonly List<GameObject> availableItems = new List<GameObject>();
         private readonly List<GameObject> takenItems = new List<GameObject>();
         private readonly IObjectFactory objectFactory;
         private readonly GameSettings gameSettings;
 
-        public ObjectPool(IObjectFactory objectFactory, GameSettings gameSettings)
+        public CherryPool(IObjectFactory objectFactory, GameSettings gameSettings)
         {
             this.objectFactory = objectFactory;
             this.gameSettings = gameSettings;
@@ -34,14 +34,14 @@ namespace Services
             return cherry;
         }
 
-        public void SetItemToPool(GameObject cherry)
+        public void SetItemToPool(GameObject item)
         {
-            if (!takenItems.Contains(cherry))
+            if (!takenItems.Contains(item))
                 return;
             
-            availableItems.Add(cherry);
-            takenItems.Remove(cherry);
-            cherry.SetActive(false);
+            availableItems.Add(item);
+            takenItems.Remove(item);
+            item.SetActive(false);
         }
         
     }

@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace Items
 {
-    public class ObjectFactory : IObjectFactory
+    public class CherryFactory : IObjectFactory
     {
         private readonly IAssetProvider assetProvider;
         private const string cherryPath = "Prefabs/Items/Cherry";
 
-        public ObjectFactory(IAssetProvider assetProvider) => 
+        public CherryFactory(IAssetProvider assetProvider) => 
             this.assetProvider = assetProvider;
 
         public GameObject CreateObject(Vector3 position, Transform parent = null) =>

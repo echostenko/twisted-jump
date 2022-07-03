@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace Interfaces
 {
-    public interface IItemFactory
+    public interface IObjectFactory
     {
-        GameObject CreateCherry(Vector3 position, Transform parent = null);
+        GameObject CreateObject(Vector3 position, Transform parent = null);
     }
 }

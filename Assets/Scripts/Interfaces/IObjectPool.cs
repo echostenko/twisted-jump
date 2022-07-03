@@ -2,10 +2,10 @@ using UnityEngine;
 
 namespace Interfaces
 {
-    public interface IItemPool
+    public interface IObjectPool
     {
         void Initialize();
         GameObject GetItemFromPool();
-        void SetItemToPool(GameObject cherry);
+        void SetItemToPool(GameObject item);
     }
 }

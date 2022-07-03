@@ -18,11 +18,11 @@ namespace Items
             {
                 ScoreManager.Instance.PlusPoint();
                 PlayerMove.Instance.BuffJump();
-                serviceLocator.ItemPool.SetItemToPool(gameObject);
+                serviceLocator.cherryPool.SetItemToPool(gameObject);
             }
         }
 
         private void OnTriggerEnter2D(Collider2D other) => 
-            serviceLocator.ItemPool.SetItemToPool(gameObject);
+            serviceLocator.cherryPool.SetItemToPool(gameObject);
     }
 }
