@@ -1,3 +1,4 @@
+using System;
 using Services;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ namespace Platforms
     {
         private ServiceLocator serviceLocator;
 
-        private void Awake() => 
+        private void Start() => 
             serviceLocator = ServiceLocator.instance;
 
         private void OnCollisionEnter2D(Collision2D other)

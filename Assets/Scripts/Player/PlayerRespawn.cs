@@ -27,7 +27,9 @@ namespace Player
         private IEnumerator RespawnDelayCoroutine()
         {
             yield return new WaitForSeconds(5);
+            gameObject.SetActive(false);
             gameObject.transform.position = spawnPoint.position;
+            gameObject.SetActive(transform);
         }
     }
 }

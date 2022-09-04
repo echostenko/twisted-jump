@@ -100,6 +100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood Platform (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
 --- !u!4 &2404051681468310624 stripped
@@ -161,6 +165,10 @@ PrefabInstance:
     - target: {fileID: 3855776126568652929, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
       propertyPath: m_Name
       value: Wood Platform (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
@@ -224,6 +232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood Platform (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
 --- !u!4 &2404051681027038757 stripped
@@ -285,6 +297,10 @@ PrefabInstance:
     - target: {fileID: 3855776126568652929, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
       propertyPath: m_Name
       value: Wood Platform (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
@@ -348,6 +364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood Platform (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
 --- !u!4 &2404051680969756136 stripped
@@ -409,6 +429,10 @@ PrefabInstance:
     - target: {fileID: 3855776126568652929, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
       propertyPath: m_Name
       value: Wood Platform (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
@@ -472,6 +496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood Platform (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
 --- !u!4 &2404051681084432596 stripped
@@ -533,6 +561,10 @@ PrefabInstance:
     - target: {fileID: 3855776126568652929, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
       propertyPath: m_Name
       value: Wood Platform (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
@@ -596,6 +628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
 --- !u!4 &2404051681760125437 stripped
@@ -657,6 +693,10 @@ PrefabInstance:
     - target: {fileID: 3855776126568652929, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
       propertyPath: m_Name
       value: Wood Platform (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
@@ -720,6 +760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood Platform (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
 --- !u!4 &2404051680275835394 stripped
@@ -781,6 +825,10 @@ PrefabInstance:
     - target: {fileID: 3855776126568652929, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
       propertyPath: m_Name
       value: Wood Platform (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
@@ -844,6 +892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wood Platform (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
 --- !u!4 &2404051680720024205 stripped
@@ -905,6 +957,10 @@ PrefabInstance:
     - target: {fileID: 3855776126568652929, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
       propertyPath: m_Name
       value: Wood Platform (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3855776126568652934, guid: 11f32bc00012aa046b5c54182b644057, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f32bc00012aa046b5c54182b644057, type: 3}

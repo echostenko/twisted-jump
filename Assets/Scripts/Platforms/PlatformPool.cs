@@ -35,9 +35,6 @@ namespace Platforms
 
         public void SetItemToPool(GameObject item)
         {
-            if (!takenItems.Contains(item))
-                return;
-
             availableItems.Add(item);
             takenItems.Remove(item);
             item.SetActive(false);
