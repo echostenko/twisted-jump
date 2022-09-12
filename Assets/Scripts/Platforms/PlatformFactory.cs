@@ -1,5 +1,6 @@
 ﻿using Interfaces;
 using UnityEngine;
+using Zenject;
 
 namespace Platforms
 {
@@ -8,6 +9,7 @@ namespace Platforms
         private readonly IAssetProvider assetProvider;
         private const string platformPath = "Prefabs/Platforms/Wood Platform";
 
+        [Inject]
         public PlatformFactory(IAssetProvider assetProvider) =>
             this.assetProvider = assetProvider;
 
