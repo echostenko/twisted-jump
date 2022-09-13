@@ -693,6 +693,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bootstrap: {fileID: 2053796712}
+  firstSpawner: {fileID: 502822460}
+  secondSpawner: {fileID: 1956318295}
+  thirdSpawner: {fileID: 1858622005}
+  platforms: {fileID: 1668910163}
+  gameSettings: {fileID: 11400000, guid: 61d59396ec72a044a8a80542b37082fd, type: 2}
 --- !u!114 &1446772930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1020,11 +1025,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a644eba3358d459da310dc94f7be06cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstSpawner: {fileID: 502822461}
-  secondSpawner: {fileID: 1956318296}
-  thirdSpawner: {fileID: 1858622006}
-  platforms: {fileID: 1668910164}
-  gameSettings: {fileID: 11400000, guid: 61d59396ec72a044a8a80542b37082fd, type: 2}
 --- !u!4 &2053796714
 Transform:
   m_ObjectHideFlags: 0
