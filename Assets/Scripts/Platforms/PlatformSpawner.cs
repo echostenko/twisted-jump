@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Interfaces;
 using UnityEngine;
+using Zenject;
 
 namespace Platforms
 {
@@ -12,6 +13,7 @@ namespace Platforms
         private IObjectPool platformPool;
         private ICoroutineRunner coroutineRunner;
 
+        [Inject]
         public PlatformSpawner(IObjectPool platformPool, ICoroutineRunner coroutineRunner,  Transform firstSpawner, 
             Transform secondSpawner, Transform thirdSpawner)
         {
