@@ -1,6 +1,7 @@
 using Interfaces;
 using Unity.Mathematics;
 using UnityEngine;
+using Zenject;
 
 namespace Items
 {
@@ -9,6 +10,7 @@ namespace Items
         private readonly IAssetProvider assetProvider;
         private const string cherryPath = "Prefabs/Items/Cherry";
 
+        [Inject]
         public CherryFactory(IAssetProvider assetProvider) => 
             this.assetProvider = assetProvider;
 

@@ -2,6 +2,7 @@
 using Data;
 using Interfaces;
 using UnityEngine;
+using Zenject;
 
 namespace Items
 {
@@ -12,6 +13,7 @@ namespace Items
         private readonly IObjectFactory objectFactory;
         private readonly GameSettings gameSettings;
 
+        [Inject]
         public CherryPool(IObjectFactory objectFactory, GameSettings gameSettings)
         {
             this.objectFactory = objectFactory;
